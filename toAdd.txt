@@ -1,0 +1,9 @@
+keepassxc
+conky-all
+fish
+sudo nala install virt-manager
+gpick
+gimp
+libreoffice-writer
+libreoffice-calc
+

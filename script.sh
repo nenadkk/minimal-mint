@@ -1,6 +1,9 @@
 #!/bin/bash
 
-
+sudo apt install nala -y
+sudo nala 
+sudo nala fetch --https-only
+sudo nala update 
 
 # Warn user
 echo "This script removes a LOT of packages!"
@@ -22,7 +25,20 @@ printf "Removing packages...""\n"
 
 while read package
 do
-  apt purge --ignore-missing --auto-remove -y "$package"
-done < "packages.txt"
+    sudo nala purge -y "$package"
+    sudo nala autopurge 
+    sudo nala autoremove 
+done < "toRemove.txt"
 
 printf "\n""Packages removed successfully!"
+
+printf "\n""Installing packages..."
+
+while read package
+do
+    sudo nala install -y "$packege"
+done < "toRemove.txt"
+
+sudo naal upgrade -y
+
+sudo nala clean
