@@ -37,7 +37,7 @@ printf "\n""Installing packages..."
 while read package
 do
     sudo nala install -y "$packege"
-done < "toRemove.txt"
+done < "toAdd.txt"
 
 sudo naal upgrade -y
 
