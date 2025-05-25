@@ -1,9 +1,17 @@
-# Linux Mint mini
+# Linux Mint minimal
 
-run the `mini.sh` to purge Linux Mint from software that you likely don't need or use. 
+This is a fork of Chris Titus's repo [https://github.com/ChrisTitusTech/minimal-mint].
 
-After running bash script on a new Linux Mint install there is _1971_ software packages installed `apt list --installed | wc -l`
+The list of packages to be removed is modified and the script now installs some of 
+my frequently used programms.
 
-- i also added `sudo rm -r /etc/libreoffice/registry/res  \` as it was not removed due to not being empty
+Note that before installing or removing anything the script will install 'nala', fetch
+the mirrors and than update.
 
-_a minimal Linux_ 
+There is also a second script that unpackages some theme, icons and font and it moves
+them to their correcet folder.
+
+## TODO
+- [ ] Add in aspect.sh the possibility to choose between adding the theme/icons/font or
+        removing the default ones. This will be done by passing a flag
+- [ ] Automatically set the theme/icons/font via bash
