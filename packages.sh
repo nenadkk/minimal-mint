@@ -26,9 +26,11 @@ printf "Removing packages...""\n"
 while read package
 do
     sudo nala purge -y "$package"
-    sudo nala autopurge 
-    sudo nala autoremove 
 done < "toRemove.txt"
+
+sudo apt autoclean
+sudo apt autoremove
+sudo apt autopurge
 
 printf "\n""Packages removed successfully!"
 
