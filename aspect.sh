@@ -1,8 +1,8 @@
-sudo tar -xvzf icone-temi-font/Tela-circle-black.tar.gz
-sudo mv Tela-circle-black ~/.icons/
+sudo tar -xvzf icone-temi-font/Tela.tar.gz
+sudo mv Tela ~/.icons/
 
-sudo tar -xvzf icone-temi-font/Orchis-Dark.tar.gz
-sudo mv Orchis-Dark ~/.themes/
+sudo tar -xvzf icone-temi-font/Fluent-round.tar.gz
+sudo mv Fluent-round/Fluent-round-Dark ~/.themes/
 
 mkdir /tempFold/
 sudo unzip CascadiaMono.zip -d ./tempFold/
